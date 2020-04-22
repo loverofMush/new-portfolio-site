@@ -1,0 +1,122 @@
+header .navbar {
+    display: none;
+    clear: both;
+    margin-top: 10px;
+    margin-left: -20px;
+    margin-right: -20px;
+    background: #222;
+}
+header .navbar .nav-item.active a:before {
+    left: 10px;
+    right: 10px;
+    background: #dc3545;
+}
+header .navbar .nav-item.active a {
+    color: white;
+}
+header .navbar a {
+    position: relative;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    width: 100%;
+    padding: 15px 6px;
+    box-sizing: border-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #CCC;
+}
+header .navbar a {
+    font-size: 14px;
+    font-size: .875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+header .navbar ul {
+    width: 100%;
+    /* display: inline-block; */
+    list-style: none;
+}
+header .navbar li {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    border-bottom: #333 solid 1px;
+}
+header .navbar {
+    font-size: 0;
+    font-weight: 500;
+    text-align: center;
+}
+
+@media screen and (min-width: 320px) {
+    header .navbar .nav-item a:hover:before {
+        bottom: 5px;
+    }
+}
+@media screen and (min-width: 721px) {
+    header .navbar li {
+        width: auto;
+        max-width: 100%;
+        display: inline-block;
+        vertical-align: middle;
+        border: none;
+    }
+    header .navbar .nav-item.active a:before {
+        left: 8px;
+        right: 8px;
+    }
+    header .navbar .nav-item a:hover:before {
+        left: 8px;
+        right: 8px;
+    }
+    header .navbar {
+        clear: none;
+        display: block;
+        position: relative;
+        top: 7px;
+        float: right;
+        height: 100%;
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+        background: none;
+    }
+    header .navbar .nav-item a:before {
+        content: " ";
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        bottom: 5px;
+        height: 2px;
+        /* background: rgb(11, 54, 117); */
+        transition-duration: 0.3s;
+        transition-property: left, right;
+    }
+    header .navbar .nav-item a:hover:before {
+        background: #23599a;
+    }
+    header .navbar .nav-item.active a:hover:before {
+        background: #dc3545;
+    }
+    header .navbar a {
+        padding: 15px 8px;
+        color: white;
+        font-size: 12px;
+    }
+}
+@media screen and (min-width: 841px) {
+    header .navbar .nav-links .nav-item.active a:before {
+        left: 12px;
+        right: 12px;
+    }
+    header .navbar a {
+        padding: 15px 12px;
+        font-size: 13px;
+    }
+}

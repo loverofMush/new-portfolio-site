@@ -1,26 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './images/1.png';
 import './App.css';
+import { Navbar } from './components/Navbar';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const text = ["Hi!, I,m Timothy", "Kon'nichiwa! Watashi wa Timoshīdesu", ]
+    return (
+        <header id="headerWrapper" className="headerWrapper" role="banner">
+            <img src={logo} id="logo-1" className="App-logo" alt="logo" />
+            <Navbar />
+            <div className="header-inner">
+                <div className="header-divider">
+                    <div className="container section text-center">
+                        <div className="row">
+                            <div className="col-md-10 col-lg-7 mx-auto">
+                                <h1 className="intro">
+                                    <p id="greet"></p>
+                                </h1>
+                                <div className="locale">  
+                                    <p id="bio-text">A web developer based in Lagos, Nigeria.
+                                        I love creating beautiful and functional mobile-first web applications.
+                                    </p>
+                                </div>
+                                <a href="#pricing" className="btn btn-secondary--gradient">Get started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    );
 }
 
 export default App;
