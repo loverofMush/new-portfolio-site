@@ -4,7 +4,6 @@ import './App.css';
 import { Navbar } from './components/Navbar';
 
 function App() {
-    const text = ["Hi!, I,m Timothy", "Kon'nichiwa! Watashi wa Timoshīdesu", ]
     return (
         <header id="headerWrapper" className="headerWrapper" role="banner">
             <img src={logo} id="logo-1" className="App-logo" alt="logo" />
@@ -15,7 +14,7 @@ function App() {
                         <div className="row">
                             <div className="col-md-10 col-lg-7 mx-auto">
                                 <h1 className="intro">
-                                    <p id="greet"></p>
+                                    <p id="greet"><span></span></p>
                                 </h1>
                                 <div className="locale">  
                                     <p id="bio-text">A web developer based in Lagos, Nigeria.

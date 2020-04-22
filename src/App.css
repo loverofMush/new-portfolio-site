@@ -58,13 +58,20 @@
 }
 
 .App-logo {
-    /* position: relative; */
-    top: 45px; 
-    width: 100px;
+    width: 80px;
     height: 20%;
     background: #1d212400;
     border-radius: 50%;
-    pointer-events: none;
+    margin: 5px;
+}
+
+img.App-logo {
+    border-radius: 50%;
+    transition: transform 2s ease-in-out;
+}
+img.App-logo:hover {
+    transform: rotateY(360deg);
+    border: 3px solid red;
 }
 
 .header-inner {
@@ -122,33 +129,61 @@
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxNDQwIDMyMCc+PHBhdGggZmlsbD0nI2ZmZmZmZicgZmlsbC1vcGFjaXR5PScwLjc1JyBkPSdNMCwzMkw2MCw1My4zQzEyMCw3NSwyNDAsMTE3LDM2MCwxNDRDNDgwLDE3MSw2MDAsMTgxLDcyMCwxNjBDODQwLDEzOSw5NjAsODUsMTA4MCw4MEMxMjAwLDc1LDEzMjAsMTE3LDEzODAsMTM4LjdMMTQ0MCwxNjBMMTQ0MCwzMjBMMTM4MCwzMjBDMTMyMCwzMjAsMTIwMCwzMjAsMTA4MCwzMjBDOTYwLDMyMCw4NDAsMzIwLDcyMCwzMjBDNjAwLDMyMCw0ODAsMzIwLDM2MCwzMjBDMjQwLDMyMCwxMjAsMzIwLDYwLDMyMEwwLDMyMFonPjwvcGF0aD48L3N2Zz4=);
 }
 h1.intro {
-    font-size: 3.875rem;
+    font-size: 2.475rem;
     font-family: "Philosopher", 'sans-serif';
     font-weight: 400;
 }
 
 .locale p#bio-text {
-    font-size: 1.699rem;
+    font-size: 1.299rem;
     font-weight: 200;
     color: #dee2e6;
     line-height: 1.3;
     font-family: "Montserrat", 'sans-serif';
 }
 
-/* h1 p:before{
-    content: 'Hi';
+h1 p:before{
+    content: 'Hi, ';
     animation-name: head;
-    animation-duration: 10s;
+    animation-duration: 40s;
     animation-iteration-count: infinite;
 }
 
 @keyframes head {
-    0% {opacity:1;}
-    20% {opacity:0;}
-    40% {opacity:1;}
-    60% {opacity:0; content: "Guten Tag"}
-    70% {opacity:0;}
-    80% {opacity:1; content: "Bonjour"}
-    90% {opacity:0;}
-    100% {opacity:1; content: "Hi"}
-} */
+    2% { opacity: 0.5}
+    7% { opacity: 0;}
+    25% { opacity: 1; content: "Moin, "}
+    27% { opacity: 0.5;}
+    32% { opacity: 0;}
+    50% { opacity: 1; content: "Kon'nichiwa, "}
+    52% { opacity: 0.5;}
+    57% { opacity: 0;}
+    75% { opacity: 1;  content: "Ba wo, "}
+    77% { opacity: 0.5;}
+    82% { opacity: 0;}
+    100% {opacity: 1;}
+}
+
+h1 p span:before{
+    content: "I'm Timothy.";
+    animation-name: tail;
+    color: #e75fe8;
+    animation-duration: 40s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes tail {
+    2% { opacity: 0.5;}
+    7% { opacity: 0;}
+    25% { opacity: 1; content: "ich bin Timothy."; color: #e68a28;}
+    27% { opacity: 0.5;}
+    32% { opacity: 0;}
+    50% { opacity: 1; content: "watashi wa Timoshīdesu."; color: #e0515e}
+    52% { opacity: 0.5;}
+    57% { opacity: 0;}
+    75% { opacity: 1;  content: "emi ni Timothy."; color: yellow}
+    77% { opacity: 0.5;}
+    82% { opacity: 0;}
+    100% {opacity: 1;}
+}
