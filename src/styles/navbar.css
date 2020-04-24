@@ -152,3 +152,12 @@ img.App-logo:hover {
         font-size: 13px;
     }
 }
+@media (max-width: 720px) {
+    .hamburger-menu {
+        position: absolute;
+        align-self: center;
+        left: 80px;
+        font-size: 2em;
+        color: #545b62;
+    }
+}

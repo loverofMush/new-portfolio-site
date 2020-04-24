@@ -41,7 +41,7 @@
 .main-inner:after {
     content: " ";
     right: 0;
-    bottom: -50px;
+    bottom: 105px;
     opacity: .1;
     left: 0;
     height: 150px;
@@ -55,7 +55,7 @@
 .main-header:after {
     content: " ";
     right: 0;
-    bottom: 0;
+    bottom: 104px;
     opacity: 1;
     left: 0;
     height: 150px;
@@ -78,6 +78,7 @@ h1.intro {
     color: #dee2e6;
     line-height: 1.3;
     font-family: "Montserrat", 'sans-serif';
+    margin-bottom: 5rem;
 }
 
 h1 p:before{
@@ -117,7 +118,7 @@ h1 p span:before{
     25% { opacity: 1; content: "ich bin Timothy."; color: #e68a28;}
     27% { opacity: 0.5;}
     32% { opacity: 0;}
-    50% { opacity: 1; content: "watashi wa timoshīdesu."; color: #e0515e;}
+    50% { opacity: 1; content: "watashi wa timoshīdesu."; color: #f53a4c;}
     52% { opacity: 0.5;}
     57% { opacity: 0;}
     75% { opacity: 1;  content: "je suis Timothy."; color: yellow;}
@@ -136,11 +137,21 @@ h1 p span:before{
     position: relative;
     top: -185px;
     z-index: 101;
-    padding-top: 40px;
+    padding-top: 90px;
+}
+
+@media (max-width: 768px) {
+    h1.intro {
+        font-size: 1.57rem;
+    }
+    .locale p#bio-text {
+        font-size: 1.157rem;
+    }
 }
 
 @media (max-width: 991.98px) {
     .hashes {
-        padding-top: 60px;
+        padding-top: 90px;
     }
 }
+

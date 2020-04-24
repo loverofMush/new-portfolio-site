@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './components/Header';
 import './App.css';
 import Section from './components/Section';
-import dummyText from "./DummyText";
+import { Projects, About } from './Contents';
 
 function App() {
     return (
@@ -20,10 +20,10 @@ function App() {
                                         </h1>
                                         <div className="locale">  
                                             <p id="bio-text">A web developer based in Lagos, Nigeria.
-                                                I love creating beautiful and functional mobile-first web applications.
+                                                <br/>
+                                                I love building beautiful and functional mobile-first web applications.
                                             </p>
                                         </div>
-                                        <a href="#pricing" className="btn btn-secondary--gradient">Get started</a>
                                     </div>
                                 </div>
                             </div>
@@ -31,14 +31,12 @@ function App() {
                     </div>
                 </section>
                 <Section
-                    title="Projects"
-                    subtitle={dummyText}
+                    content={Projects}
                     dark={true}
                     id="projects"
                 />
                 <Section
-                    title="About"
-                    subtitle={dummyText}
+                    content={About}
                     dark={false}
                     id="about"
                 />

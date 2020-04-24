@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../images/1.png'
-import { Link, animateScroll as scroll } from "react-scroll";
-import { useWindowScroll } from '../useWindowScroll';
+import { Link } from "react-scroll";
 import '../styles/navbar.css';
+import { useWindowScroll } from '../useWindowScroll';
+import { useWindowResize } from '../useWindowResize';
+
 
 export const Navbar: React.FC = (): JSX.Element => {
     const { scrollY } = useWindowScroll();
+    const { width } = useWindowResize();
+    const [show, setShow] = useState<boolean>(true);
 
     const scrollNav = document.querySelector('.navbar') as HTMLElement;
 
@@ -20,9 +24,38 @@ export const Navbar: React.FC = (): JSX.Element => {
             scrollNav.style.borderBottom = 'none';
         }
     }
+
+    const toggleMenu = (e: React.MouseEvent<HTMLElement, MouseEvent>): void => {
+        e.preventDefault();
+        console.log('hey');
+        // setHidden(!hidden);
+        // setShow(!show);
+
+        // const side = document.getElementById('root');
+        // if (show === true) {
+        //     side?.classList.add('show-sidebar');
+        // } else {
+        //     side?.classList.remove('show-sidebar');
+        // }
+    };
+
     return (
         <nav id="nav" role="navigation" className="navbar">
-            <img src={logo} id="logo-1" className="App-logo" alt="logo" />
+            <img 
+                src={logo} 
+                id="logo-1" 
+                className="App-logo" 
+                alt="logo" 
+            />
+            {width < 721 && (
+                <div className="hamburger-menu">
+                    {show ? (
+                        <i className="mdi mdi-sort-variant" onClick={toggleMenu}></i>
+                    ) : (
+                        <i className="mdi mdi-close" onClick={toggleMenu}></i>
+                    )}
+                </div>
+            )}
             <ul id="navbar-nav_menu" className="">
                 <li className="nav-item">
                     <Link

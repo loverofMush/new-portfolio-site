@@ -1,21 +1,21 @@
 import React from "react";
+import '../styles/portfolio.css';
+import '../styles/skills.css';
 
 interface SectionProps {
-    title: string;
-    subtitle: string;
+    content: any;
     dark: boolean;
     id: string;
 }
 
-const Section: React.FC<SectionProps> = ({ title, subtitle, dark, id }): JSX.Element => {
-  return (
-    <div className={"hashes section" + (dark ? " section-dark" : "")}>
-      <div className="section-content" id={id}>
-        <h1>{title}</h1>
-        <p>{subtitle}</p>
-      </div>
-    </div>
-  );
+const Section: React.FC<SectionProps> = ({ content, dark, id }): JSX.Element => {
+    return (
+        <div className={"hashes section" + (dark ? " section-dark" : "")}>
+            <div className="section-content" id={id}>
+                <div>{content}</div>
+            </div>
+        </div>
+    );
 }
 
 export default Section;
