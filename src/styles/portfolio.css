@@ -122,10 +122,11 @@ small {
 
 h3.h3 {
     color: chocolate;
+    font-size: 1.35rem;
 }
 
 h2.text-center {
-    color:#117a8b;
+    color:#117a8ba6
 }
 
 @media screen and (min-width: 768px){

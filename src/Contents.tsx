@@ -84,7 +84,7 @@ export const Projects =
                     </picture>
                 </div>
                 <div className="col-lg-5 mx-auto py-3">
-                    <h3 className="h3">Lukrativ.io</h3>
+                    <h3 className="h3">lukrativ.io</h3>
                     <p className="showcase__description mb-4 color-gray">Lukrativ.io is a job board where job seekers can search <br/> for verified jobs around their location or elsewhere
                     </p>
                 </div>
@@ -139,7 +139,7 @@ export const About =
                             <h3>Timothy Akinyelu</h3>
                         </div>
                         <div className="card-body">
-                            <p className="mb-0"><strong className="pr-1">Localization:</strong>Lagos, Nigeria</p>
+                            <p className="mb-0"><strong className="pr-1">Location:</strong>Lagos, Nigeria</p>
                             <p className="mb-0"><strong className="pr-1">Nationality:</strong>Nigerian</p>
                             <p className="mb-0"><strong className="pr-1">Languages:</strong>English (Native), French (Basic)</p>
                         </div>
