@@ -149,7 +149,7 @@ h1 p span:before{
 .main-divider a {
     position: absolute;
     bottom: -90px;
-    left: 50%;
+    left: 47%;
     z-index: 2;
     display: inline-block;
     -webkit-transform: translate(0, -50%);
@@ -198,6 +198,9 @@ h1 p span:before{
     }
     .locale p#bio-text {
         font-size: 1.157rem;
+    }
+    .main-divider a {
+        left: 43%;
     }
 }
 

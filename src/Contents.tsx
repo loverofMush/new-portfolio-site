@@ -69,7 +69,7 @@ export const Projects =
                                     <img className="img-content-image" src={img02} alt="job-site"/>
                                     <div className="img-content-details fadeIn-bottom">
                                         <p>
-                                            <a href="https://intree-demo.herokuapp.com" 
+                                            <a href="https://lukrativ.herokuapp.com" 
                                                 target="_blank" 
                                                 rel="noopener noreferrer"
                                                 className="img-content-text"
