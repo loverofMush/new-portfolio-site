@@ -27,7 +27,7 @@
 .main-divider:after {
     content: " ";
     right: 0;
-    bottom: -240px;
+    bottom: -328px;
     opacity: 1;
     left: 0;
     height: 300px;
@@ -41,7 +41,7 @@
 .main-inner:after {
     content: " ";
     right: 0;
-    bottom: 105px;
+    bottom: 17px;
     opacity: .1;
     left: 0;
     height: 150px;
@@ -55,7 +55,7 @@
 .main-header:after {
     content: " ";
     right: 0;
-    bottom: 104px;
+    bottom: 20px;
     opacity: 1;
     left: 0;
     height: 150px;
@@ -130,16 +130,68 @@ h1 p span:before{
 .main {
     background: #fff;
     z-index: 0;
-    box-shadow: 0 0 10px rgba(0,0,0,.25);
+    /* box-shadow: 0 0 10px rgba(0,0,0,.25); */
 }
 
 .hashes {
     position: relative;
-    top: -185px;
+    /* top: -80px; */
     z-index: 101;
-    padding-top: 90px;
+    /* padding-top: 90px; */
+}
+.main-divider a {
+    padding-top: 60px;
+}
+.main-divider a:hover {
+    color: #ffc107a1;
 }
 
+.main-divider a {
+    position: absolute;
+    bottom: -90px;
+    left: 50%;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #ffc107;
+    font: normal 400 20px/1 'Josefin Sans', sans-serif;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+}
+
+.main-divider a span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 46px;
+    height: 46px;
+    margin-left: -23px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.main-divider a span:hover {
+    border: 1px solid #ffc107;
+}
+
+.main-divider a span::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    width: 16px;
+    height: 16px;
+    margin: -12px 0 0 -8px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+}
 @media (max-width: 768px) {
     h1.intro {
         font-size: 1.57rem;
@@ -149,9 +201,9 @@ h1 p span:before{
     }
 }
 
-@media (max-width: 991.98px) {
+/* @media (max-width: 991.98px) {
     .hashes {
-        padding-top: 90px;
+        padding-top: 10px;
     }
-}
+} */
 

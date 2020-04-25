@@ -15,11 +15,9 @@ export const Navbar: React.FC = (): JSX.Element => {
 
     if(scrollNav) {
         if(scrollY > 40) {
-            scrollNav.style.position = 'sticky';
             scrollNav.style.background = 'rgb(29, 53, 59)';
             scrollNav.style.borderBottom = '2px solid #132b2f';
         } else {
-            scrollNav.style.position = 'relative';
             scrollNav.style.background = 'transparent';
             scrollNav.style.borderBottom = 'none';
         }
@@ -27,16 +25,17 @@ export const Navbar: React.FC = (): JSX.Element => {
 
     const toggleMenu = (e: React.MouseEvent<HTMLElement, MouseEvent>): void => {
         e.preventDefault();
-        console.log('hey');
-        // setHidden(!hidden);
-        // setShow(!show);
+        
+        setShow(!show);
 
-        // const side = document.getElementById('root');
-        // if (show === true) {
-        //     side?.classList.add('show-sidebar');
-        // } else {
-        //     side?.classList.remove('show-sidebar');
-        // }
+        const side = document.getElementById('navbar-nav_menu');
+        if(side) {
+            if (show === true) {
+                side.style.display = 'inline-flex';
+            } else {
+                side.style.display = 'none';
+            }
+        }
     };
 
     return (
@@ -82,28 +81,12 @@ export const Navbar: React.FC = (): JSX.Element => {
                     </Link>
                 </li>
                 <li className="contact-me">
-                    <Link
-                        // activeClass="active"
-                        to="section3"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
+                    <a
+                        href={"mailto:akinyelut@gmail.com"}
                     >
-                        Hire Tim
-                    </Link>
-                </li>
-                {/* <li id="nav-item-1" className="nav-item active">
-                    <a title="About Ian Lunn – Web Designer &amp; Front-end Developer" href="#about">About</a>
-                </li>
-                <li id="nav-item-2" className="nav-item">
-                    <a title="Portfolio of Web Design &amp; Front-end Development Projects" href="/">
-                        Portfolio
+                        Email Tim
                     </a>
                 </li>
-                <li id="nav-item-3" className="contact">
-                    <a title="Hire Tim" href="#contact-me">Hire Tim</a>
-                </li> */}
             </ul>				
         </nav>
     );

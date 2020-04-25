@@ -10,7 +10,7 @@
     background: 0 0;
 }
 header .navbar {
-    display: none;
+    display: flex;
     clear: both;
     margin-top: 10px;
     margin-left: -20px;
@@ -111,7 +111,7 @@ img.App-logo:hover {
         clear: none;
         display: flex;
         position: relative;
-        top: 7px;
+        top: 0;
         float: right;
         height: 100%;
         margin-top: 0;
@@ -153,11 +153,27 @@ img.App-logo:hover {
     }
 }
 @media (max-width: 720px) {
+    header #navbar-nav_menu {
+        display: none;
+    }
+    header .navbar {
+        background: transparent;
+        border-bottom: none;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    header .navbar li {
+        display: inline-block;
+        width: auto;
+    }
     .hamburger-menu {
         position: absolute;
         align-self: center;
         left: 80px;
         font-size: 2em;
-        color: #545b62;
+        color: #ffc107;
+    }
+    .hamburger-menu .mdi:before {
+        font-size: xx-large;
     }
 }

@@ -43,8 +43,8 @@
     display: grid;
     grid-template-columns: 30px auto;
     align-items: center;
-  }
-  #checklist label {
+}
+#checklist label {
     color: var(--text);
     position: relative;
     cursor: pointer;
@@ -52,27 +52,27 @@
     align-items: center;
     width: fit-content;
     transition: color 0.3s ease;
-  }
-  #checklist label::before, #checklist label::after {
+}
+#checklist label::before, #checklist label::after {
     content: "";
     position: absolute;
-  }
-  #checklist label::before {
+}
+#checklist label::before {
     height: 2px;
     width: 8px;
     left: -27px;
     background: var(--check);
     border-radius: 2px;
     transition: background 0.3s ease;
-  }
-  #checklist label:after {
+}
+#checklist label:after {
     height: 4px;
     width: 4px;
     top: 8px;
     left: -25px;
     border-radius: 50%;
-  }
-  #checklist input[type="checkbox"] {
+}
+#checklist input[type="checkbox"] {
     -webkit-appearance: none;
     -moz-appearance: none;
     position: relative;
@@ -85,70 +85,67 @@
     background: var(--background);
     display: grid;
     align-items: center;
-  }
-  #checklist input[type="checkbox"]::before, #checklist input[type="checkbox"]::after {
+}
+#checklist input[type="checkbox"]::before, #checklist input[type="checkbox"]::after {
     content: "";
     position: absolute;
     height: 2px;
     top: auto;
     background: var(--check);
     border-radius: 2px;
-  }
-  #checklist input[type="checkbox"]::before {
+}
+#checklist input[type="checkbox"]::before {
     width: 0px;
     right: 60%;
     transform-origin: right bottom;
-  }
-  #checklist input[type="checkbox"]::after {
+}
+#checklist input[type="checkbox"]::after {
     width: 0px;
     left: 40%;
     transform-origin: left bottom;
-  }
-  #checklist input[type="checkbox"]:checked::before {
+}
+#checklist input[type="checkbox"]:checked::before {
     animation: check-01 0.4s ease forwards;
-  }
-  #checklist input[type="checkbox"]:checked::after {
+}
+#checklist input[type="checkbox"]:checked::after {
     animation: check-02 0.4s ease forwards;
-  }
-  #checklist input[type="checkbox"]:checked + label {
+}
+#checklist input[type="checkbox"]:checked + label {
     color: var(--disabled);
     animation: move 0.3s ease 0.1s forwards;
-  }
-  #checklist input[type="checkbox"]:checked + label::before {
+}
+#checklist input[type="checkbox"]:checked + label::before {
     background: var(--disabled);
     animation: slice 0.4s ease forwards;
-  }
-  #checklist input[type="checkbox"]:checked + label::after {
+}
+#checklist input[type="checkbox"]:checked + label::after {
     animation: firework 0.5s ease forwards 0.1s;
-  }
-  #checklist li#fonts-1 a {
+}
+#checklist li#fonts-1 a {
     color: #dc3545;
-  }
-  #checklist li#fonts-3 a {
+}
+#checklist li#fonts-3 a {
     color: #ffffff;
-  }
-  #checklist a {
+}
+#checklist a {
     text-decoration: none;
-  }
-
-  #checklist i.mdi {
+}
+#checklist i.mdi {
     display: flex;
     font-size: 20px;
-  }
-
-  #checklist i.mdi::before {
+}
+#checklist i.mdi::before {
     font-size: 30px;
 }
-
-  #checklist i.mdi span {
+#checklist i.mdi span {
     padding-left: 10px;
     color: #adb5bd;
     align-self: center;
     font-family: 'Livvic', 'Open-sans';
     font-style: normal;
-  }
+}
 
-  @keyframes move {
+@keyframes move {
     50% {
       padding-left: 8px;
       padding-right: 0px;
@@ -156,8 +153,8 @@
     100% {
       padding-right: 4px;
     }
-  }
-  @keyframes slice {
+}
+@keyframes slice {
     60% {
       width: 100%;
       left: 4px;
@@ -167,8 +164,8 @@
       left: -2px;
       padding-left: 0;
     }
-  }
-  @keyframes check-01 {
+}
+@keyframes check-01 {
     0% {
       width: 4px;
       top: auto;
@@ -189,8 +186,8 @@
       top: 8px;
       transform: rotate(45deg);
     }
-  }
-  @keyframes check-02 {
+}
+@keyframes check-02 {
     0% {
       width: 4px;
       top: auto;
@@ -211,8 +208,8 @@
       top: 8px;
       transform: rotate(-45deg);
     }
-  }
-  @keyframes firework {
+}
+@keyframes firework {
     0% {
       opacity: 1;
       box-shadow: 0 0 0 -2px #4F29F0, 0 0 0 -2px #4F29F0, 0 0 0 -2px #4F29F0, 0 0 0 -2px #4F29F0, 0 0 0 -2px #4F29F0, 0 0 0 -2px #4F29F0;
@@ -224,36 +221,41 @@
       opacity: 0;
       box-shadow: 0 -15px 0 0px #4F29F0, 14px -8px 0 0px #4F29F0, 14px 8px 0 0px #4F29F0, 0 15px 0 0px #4F29F0, -14px 8px 0 0px #4F29F0, -14px -8px 0 0px #4F29F0;
     }
-  }
+}
 
-  #about .card {
+.section #about {
+    margin-top: 90px;
+    padding-bottom: 100px;
+}
+#about .card {
     border-radius: 10px;
     border: none;
     background: transparent;
-  }
-
-  #about .card .card-header {
+}
+#about .card .card-header {
     border-bottom: 0px;
-  }
-  
-  #about .card .card-header .profile_img {
+}
+#about .card .card-header .profile_img {
     width: 150px;
     height: 150px;
     object-fit: cover;
     margin: 10px auto;
     border: 10px solid #ccc;
     border-radius: 50%;
-  }
-  
-  #about .card h3 {
+}
+#about .card h3 {
     font-size: 20px;
     font-weight: 700;
-  }
-  
-  #about .card p {
+}
+#about .card p {
     font-size: 13px;
     color: #959ba0;
     font-family: 'Montserrat', 'sans-serif';
     line-height: 2;
-  }
+}
   
+@media (max-width: 768px) {
+    #checklist i.mdi {
+        font-size: 17px;
+    }
+}

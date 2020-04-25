@@ -1,4 +1,5 @@
 import React from 'react';
+import coding from './images/coding.png';
 
 let img01 = require( './images/inTree.png');
 let img02 = require( './images/lukrativ.png');
@@ -13,6 +14,11 @@ const ulStyles = {
 export const Projects = 
     <>
         <div className="container section">
+            <div className="tooltip"><img id="attr-img" src={coding} alt="" />
+                <span className="tooltiptext">
+                    Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+                </span>
+            </div>
             <h2 className="pre text-center">Projects</h2>
             <div className="row align-items-center h-100 text-center text-lg-left">
                 <div className="col-lg-6 p-lg-0">
