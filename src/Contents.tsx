@@ -123,6 +123,12 @@ export const Projects =
                 </div>
             </div>
             <hr/>
+            <div className="reach justify-content-center">
+                <h4>Got a project you'd like to discuss?</h4>
+                <a href="mailto:akinyelut@gmail.com" className="button">
+                    <span className="hire-me">Connect</span>
+                </a>
+            </div>
         </div>
     </>
 
