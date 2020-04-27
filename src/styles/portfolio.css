@@ -207,6 +207,9 @@ h2.text-center {
     .tooltip #attr-img {
         width: 60%;
     }
+    .reach h4 {
+        font-size: 1.2em;
+    }
 }
 
 .reach {
