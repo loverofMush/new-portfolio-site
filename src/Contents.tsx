@@ -151,11 +151,13 @@ export const About =
                         <input id="01" type="checkbox" name="r" value="1" disabled />
                         <label htmlFor="01">HTML5 / CSS3</label>
                         <input id="02" type="checkbox" name="r" value="2" disabled />
-                        <label htmlFor="02">Vue</label>
+                        <label htmlFor="02">Vue / Vuex</label>
                         <input id="03" type="checkbox" name="r" value="3" disabled />
-                        <label htmlFor="03">React</label>
+                        <label htmlFor="03">React / Redux</label>
                         <input id="04" type="checkbox" name="r" value="3" disabled />
                         <label htmlFor="04">Laravel</label>
+                        <input id="04" type="checkbox" name="r" value="3" disabled />
+                        <label htmlFor="04">GraphQL</label>
                         <input id="05" type="checkbox" name="r" value="3" disabled />
                         <label htmlFor="05">PostgreSQL</label>
                     </div>

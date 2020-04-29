@@ -66,8 +66,17 @@ header .navbar {
     text-align: center;
 }
 header .navbar .contact-me {
-    background: #17a2b8;
+    background: #7722f1;
     border-radius: 5px;
+    border: 1px solid #f8f9fa7a;
+}
+header .navbar .contact-me a {
+    padding: 10px;
+    color: #ffc20b;
+    text-transform: uppercase;
+}
+header .navbar .contact-me a i{
+    padding: 5px;
 }
 .App-logo {
     width: 70px;

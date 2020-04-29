@@ -15,8 +15,8 @@ export const Navbar: React.FC = (): JSX.Element => {
 
     if(scrollNav) {
         if(scrollY > 40) {
-            scrollNav.style.background = 'rgb(29, 53, 59)';
-            scrollNav.style.borderBottom = '2px solid #132b2f';
+            scrollNav.style.background = '#7a19f1';
+            scrollNav.style.borderBottom = '#0000001c 2px solid';
         } else {
             scrollNav.style.background = 'transparent';
             scrollNav.style.borderBottom = 'none';
@@ -84,6 +84,7 @@ export const Navbar: React.FC = (): JSX.Element => {
                     <a
                         href={"mailto:akinyelut@gmail.com"}
                     >
+                        <i className="fa fa-paper-plane"></i>
                         Email Tim
                     </a>
                 </li>
