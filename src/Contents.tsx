@@ -179,19 +179,19 @@ export const About =
                     <h5>Connect</h5>
                     <div id="checklist">
                         <ul style={ulStyles}>
-                            <li id="fonts-1">
+                            {/* <li id="fonts-1">
                                 <a href="https://www.instagram.com/jamalakinyelu">
                                     <i className="mdi mdi-instagram"><span>@jamalakinyelu</span></i>
                                 </a>
-                            </li>
+                            </li> */}
                             <li id="fonts-2">
                                 <a href="https://twitter.com/loverofMush">
                                     <i className="mdi mdi-twitter"><span>@loverofMush</span></i>
                                 </a>
                             </li>
                             <li id="fonts-3">
-                                <a href="https://github.com/loverofMush">
-                                    <i className="mdi mdi-github"><span>@loverofMush</span></i>
+                                <a href="https://github.com/timothyakinyelu">
+                                    <i className="mdi mdi-github"><span>@timothyakinyelu</span></i>
                                 </a>
                             </li>
                         </ul>
