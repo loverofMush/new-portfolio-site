@@ -23,7 +23,7 @@ function App() {
                                         <div className="locale">  
                                             <p id="bio-text">A web developer based in Lagos, Nigeria.
                                                 <br/>
-                                                I love building functional mobile-first web applications.
+                                                I build functional mobile-first web applications that solve business needs.
                                             </p>
                                         </div>
                                     </div>

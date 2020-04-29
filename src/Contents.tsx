@@ -157,13 +157,15 @@ export const About =
                         <input id="01" type="checkbox" name="r" value="1" disabled />
                         <label htmlFor="01">HTML5 / CSS3</label>
                         <input id="02" type="checkbox" name="r" value="2" disabled />
-                        <label htmlFor="02">Vue</label>
+                        <label htmlFor="02">Vue / Vuex</label>
                         <input id="03" type="checkbox" name="r" value="3" disabled />
-                        <label htmlFor="03">React</label>
+                        <label htmlFor="03">React / Redux</label>
                         <input id="04" type="checkbox" name="r" value="3" disabled />
                         <label htmlFor="04">Laravel</label>
                         <input id="05" type="checkbox" name="r" value="3" disabled />
-                        <label htmlFor="05">PostgreSQL</label>
+                        <label htmlFor="05">GraphQL</label>
+                        <input id="06" type="checkbox" name="r" value="3" disabled />
+                        <label htmlFor="06">PostgreSQL</label>
                     </div>
                 </div>
                 <div className="col-sm-6 col-lg-3">
@@ -183,19 +185,19 @@ export const About =
                     <h5>Connect</h5>
                     <div id="checklist">
                         <ul style={ulStyles}>
-                            <li id="fonts-1">
+                            {/* <li id="fonts-1">
                                 <a href="https://www.instagram.com/jamalakinyelu">
                                     <i className="mdi mdi-instagram"><span>@jamalakinyelu</span></i>
                                 </a>
-                            </li>
+                            </li> */}
                             <li id="fonts-2">
                                 <a href="https://twitter.com/loverofMush">
                                     <i className="mdi mdi-twitter"><span>@loverofMush</span></i>
                                 </a>
                             </li>
                             <li id="fonts-3">
-                                <a href="https://github.com/loverofMush">
-                                    <i className="mdi mdi-github"><span>@loverofMush</span></i>
+                                <a href="https://github.com/timothyakinyelu">
+                                    <i className="mdi mdi-github"><span>@timothyakinyelu</span></i>
                                 </a>
                             </li>
                         </ul>

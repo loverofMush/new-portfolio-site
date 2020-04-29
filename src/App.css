@@ -9,7 +9,8 @@
     position: relative;
     color: #fff;
     /* background: linear-gradient(to bottom,#2b71b7,#05386b); */
-    background: linear-gradient(to bottom,#1d2124,#17a2b8);
+    /* background: linear-gradient(to bottom,#1d2124,#17a2b8); */
+    background: linear-gradient(to bottom,#7a19f1,#2ab7ce);
     background-attachment: fixed;
 }
 
@@ -67,8 +68,8 @@
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxNDQwIDMyMCc+PHBhdGggZmlsbD0nI2ZmZmZmZicgZmlsbC1vcGFjaXR5PScwLjc1JyBkPSdNMCwzMkw2MCw1My4zQzEyMCw3NSwyNDAsMTE3LDM2MCwxNDRDNDgwLDE3MSw2MDAsMTgxLDcyMCwxNjBDODQwLDEzOSw5NjAsODUsMTA4MCw4MEMxMjAwLDc1LDEzMjAsMTE3LDEzODAsMTM4LjdMMTQ0MCwxNjBMMTQ0MCwzMjBMMTM4MCwzMjBDMTMyMCwzMjAsMTIwMCwzMjAsMTA4MCwzMjBDOTYwLDMyMCw4NDAsMzIwLDcyMCwzMjBDNjAwLDMyMCw0ODAsMzIwLDM2MCwzMjBDMjQwLDMyMCwxMjAsMzIwLDYwLDMyMEwwLDMyMFonPjwvcGF0aD48L3N2Zz4=);
 }
 h1.intro {
-    font-size: 2.175rem;
-    font-family: "Philosopher", 'sans-serif';
+    font-size: 2.115rem;
+    font-family: "Livvic", 'sans-serif';
     font-weight: 400;
 }
 
@@ -106,7 +107,7 @@ h1 p:before{
 h1 p span:before{
     content: "I'm Timothy.";
     animation-name: tail;
-    color: #e75fe8;
+    color: #fff907;
     animation-duration: 40s;
     animation-delay: 2s;
     animation-iteration-count: infinite;
@@ -115,13 +116,13 @@ h1 p span:before{
 @keyframes tail {
     2% { opacity: 0.5;}
     7% { opacity: 0;}
-    25% { opacity: 1; content: "ich bin Timothy."; color: #e68a28;}
+    25% { opacity: 1; content: "ich bin Timothy.";}
     27% { opacity: 0.5;}
     32% { opacity: 0;}
-    50% { opacity: 1; content: "watashi wa timoshīdesu."; color: #f53a4c;}
+    50% { opacity: 1; content: "watashi wa timoshīdesu.";}
     52% { opacity: 0.5;}
     57% { opacity: 0;}
-    75% { opacity: 1;  content: "je suis Timothy."; color: yellow;}
+    75% { opacity: 1;  content: "je suis Timothy.";}
     77% { opacity: 0.5;}
     82% { opacity: 0;}
     100% {opacity: 1;}

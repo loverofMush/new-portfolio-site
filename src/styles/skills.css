@@ -22,8 +22,8 @@
 }
 
 #about .text-center h3{
-    color: #c71eb9;
-    font-family: fantasy;
+    color: #dee2e6;
+    font-family: 'Livvic', 'Open sans';
 }
 
 #checklist {
@@ -249,7 +249,7 @@
     font-weight: 700;
 }
 #about .card p {
-    font-size: 13px;
+    font-size: 1rem;
     color: #959ba0;
     font-family: 'Montserrat', 'sans-serif';
     line-height: 2;
