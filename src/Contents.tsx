@@ -102,7 +102,7 @@ export const Projects =
                                     <img className="img-content-image" src={img03} alt="larissagideon.com"/>
                                     <div className="img-content-details fadeIn-bottom">
                                         <p>
-                                            <a href="http://larissagideon.com" 
+                                            <a href="http://www.larissagideon.com" 
                                                 target="_blank" 
                                                 rel="noopener noreferrer"
                                                 className="img-content-text"
