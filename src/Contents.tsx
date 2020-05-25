@@ -185,11 +185,11 @@ export const About =
                     <h5>Connect</h5>
                     <div id="checklist">
                         <ul style={ulStyles}>
-                            {/* <li id="fonts-1">
-                                <a href="https://www.instagram.com/jamalakinyelu">
-                                    <i className="mdi mdi-instagram"><span>@jamalakinyelu</span></i>
+                            <li id="fonts-1">
+                                <a href="https://www.linkedin.com/in/timothy-akinyelu/">
+                                    <i className="mdi mdi-linkedin"><span>@timothyakinyelu</span></i>
                                 </a>
-                            </li> */}
+                            </li>
                             <li id="fonts-2">
                                 <a href="https://twitter.com/loverofMush">
                                     <i className="mdi mdi-twitter"><span>@loverofMush</span></i>
