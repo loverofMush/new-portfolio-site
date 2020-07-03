@@ -1,7 +1,7 @@
 import React from 'react';
 import coding from './images/coding.png';
 
-let img01 = require( './images/inTree.png');
+let img01 = require( './images/inventreed.png');
 let img02 = require( './images/lukrativ.png');
 let img03 = require( './images/larissagideon.png');
 let photo = require( './images/tim-with-beard.jpg');
@@ -30,7 +30,7 @@ export const Projects =
                                     <img className="img-content-image" src={img01} alt="inventory-management-app"/>
                                     <div className="img-content-details fadeIn-bottom">
                                         <p>
-                                            <a href="https://intree-v2.herokuapp.com" 
+                                            <a href="https://inventreed-demo.herokuapp.com" 
                                                 target="_blank" 
                                                 rel="noopener noreferrer"
                                                 className="img-content-text"
@@ -45,8 +45,8 @@ export const Projects =
                     </picture>
                 </div>
                 <div className="col-lg-5 mx-auto py-3">
-                    <h3 className="h3">inTree.</h3>
-                    <p className="showcase__description mb-4 color-gray">inTree. is an inventory and sales management application <br /> designed for gas and petrol outlet stations.
+                    <h3 className="h3">inventreed</h3>
+                    <p className="showcase__description mb-4 color-gray">Inventreed is an inventory and sales management application <br /> designed for gas and petrol outlet stations.
                     </p>
                     <p className="color-gray">
                         To test application <br/>
