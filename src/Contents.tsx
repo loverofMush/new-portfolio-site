@@ -3,7 +3,7 @@ import coding from './images/coding.png';
 
 let img01 = require( './images/inventreed.png');
 let img02 = require( './images/lukrativ.png');
-let img03 = require( './images/larissagideon.png');
+let img03 = require( './images/rc-pos.png');
 let photo = require( './images/tim-with-beard.jpg');
 
 const ulStyles = {
@@ -20,6 +20,40 @@ export const Projects =
                 </span>
             </div>
             <h2 className="pre text-center">Projects</h2>
+            <div className="row align-items-center h-100 text-center text-lg-left">
+                <div className="col-lg-6 p-lg-0">
+                    <picture>
+                        <div className="img-container">
+                            <div className="img-content">
+                                <div className="img-wrapper">
+                                    <div className="img-content-overlay"></div>
+                                    <img className="img-content-image" src={img03} alt="rc-pos-demo"/>
+                                    <div className="img-content-details fadeIn-bottom">
+                                        <p>
+                                            <a href="https://rc-pos-demo.herokuapp.com" 
+                                                target="_blank" 
+                                                rel="noopener noreferrer"
+                                                className="img-content-text"
+                                            >
+                                                View Project
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </picture>
+                </div>
+                <div className="col-lg-5 mx-auto py-3">
+                    <h3 className="h3">RC-POS</h3>
+                    <p className="showcase__description mb-4 color-gray">RC-POS is a simple point-of-sale system for small businesses
+                    </p>
+                </div>
+            </div>
+            
+            <hr/>
+        </div>
+        <div className="container section">
             <div className="row align-items-center h-100 text-center text-lg-left">
                 <div className="col-lg-6 p-lg-0">
                     <picture>
@@ -86,39 +120,6 @@ export const Projects =
                 <div className="col-lg-5 mx-auto py-3">
                     <h3 className="h3">lukrativ.io</h3>
                     <p className="showcase__description mb-4 color-gray">Lukrativ.io is a job board where job seekers can search <br/> for verified jobs around their location or elsewhere
-                    </p>
-                </div>
-            </div>
-            <hr/>
-        </div>
-        <div className="container section">
-            <div className="row align-items-center h-100 text-center text-lg-left">
-                <div className="col-lg-6 p-lg-0">
-                    <picture>
-                        <div className="img-container">
-                            <div className="img-content">
-                                <div className="img-wrapper">
-                                    <div className="img-content-overlay"></div>
-                                    <img className="img-content-image" src={img03} alt="larissagideon.com"/>
-                                    <div className="img-content-details fadeIn-bottom">
-                                        <p>
-                                            <a href="http://www.larissagideon.com" 
-                                                target="_blank" 
-                                                rel="noopener noreferrer"
-                                                className="img-content-text"
-                                            >
-                                                View Project
-                                            </a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </picture>
-                </div>
-                <div className="col-lg-5 mx-auto py-3">
-                    <h3 className="h3">larissagideon.com</h3>
-                    <p className="showcase__description mb-4 color-gray">larissagideon.com is a food and fashion blog
                     </p>
                 </div>
             </div>
