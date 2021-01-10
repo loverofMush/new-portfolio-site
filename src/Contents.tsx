@@ -162,11 +162,13 @@ export const About =
                         <input id="03" type="checkbox" name="r" value="3" disabled />
                         <label htmlFor="03">React / Redux</label>
                         <input id="04" type="checkbox" name="r" value="3" disabled />
-                        <label htmlFor="04">Laravel</label>
+                        <label htmlFor="04">Python/Flask</label>
                         <input id="05" type="checkbox" name="r" value="3" disabled />
-                        <label htmlFor="05">GraphQL</label>
+                        <label htmlFor="05">Laravel</label>
                         <input id="06" type="checkbox" name="r" value="3" disabled />
-                        <label htmlFor="06">PostgreSQL</label>
+                        <label htmlFor="06">GraphQL</label>
+                        <input id="07" type="checkbox" name="r" value="3" disabled />
+                        <label htmlFor="07">PostgreSQL</label>
                     </div>
                 </div>
                 <div className="col-sm-6 col-lg-3">
